@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniyal Khokhar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a> -->
+    <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a> -->
+    <div class="background-image"></div>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Daniyal Khokhar</h1>
+        <h2>Software Developer / Photographer / Volunteer</h2>
+        <div id="menu">
+            <a onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+            <a onclick="showeducation()" class="animated fadeIn" style="animation-delay:2.2s;">Education</a>
+            <a onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Work</a>
+            <!-- <a onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a> -->
+            <a style="text-decoration: none;" class="mailtoui" href="mailto:daniyalkkr@protonmail.com"
+                class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+            <a onclick="showresume()" class="animated fadeIn" style="animation-delay:2.2s;">Resume</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a
+                        href="https://www.linkedin.com/in/daniyal-s-khokhar/" target="_blank" class="social"><i
+                            class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://github.com/DaniyalSKKR"
+                        target="_blank" class="social"><i class="fab fa-github"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i
+                            class="fab fa-instagram"></i></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="edu_container" class="container">
+        <div onclick="closeeducation()"><i class="fas fa-angle-right"></i></div>
+        <div class="data_pair">
+            <span class="subtitle">
+                <h2>Education</h2>
+            </span>
+            <div class="content">
+                <div class="info_block">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="details">University of Illinois Chicago</p>
+                    <p class="dates">Sep. 2020 - Dec. 2025</p>
+                    <!-- <div class="used">
+                        <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;YOLO</div>
+                    </div> -->
+                </div>
+                <div class="info_block">
+                    <h3>Certificate in Advanced Programming</h3>
+                    <p class="details">CodePath</p>
+                    <p class="dates">Summer 2023</p>
+                    <!-- <div class="used">
+                        <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                        <div><i class="fas fa-circle"></i>&nbsp;YOLO</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn_one">button 1</button>
+        <button class="btn_two">button 2</button>
+
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Work Experience</h1>
+        <section>
+            <h2>Undergraduate Assistant Researcher | University of Illinois Chicago</h2>
+            <ul>
+                <li>Developed a learning services companion-robot using YOLO, Python, OpenCV, PyTorch, and APIs.</li>
+                <li>Conducted research on efficient, optimized object recognition models for a human-robot interaction
+                    system.</li>
+                <li>Led configuration and troubleshooting of SDKs, and cnn model conversion, testing, and optimization.
+                </li>
+            </ul>
+            <div class="used">
+                <div><i style="color: red;" class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i style="color: blue;" class="fas fa-circle"></i>&nbsp;YOLO</div>
+                <div><i style="color: green;" class="fas fa-circle"></i>&nbsp;OpenCV</div>
+                <div><i style="color: purple;" class="fas fa-circle"></i>&nbsp;PyTorch</div>
+                <div><i style="color: orange;" class="fas fa-circle"></i>&nbsp;ONNX</div>
+                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;API</div>
+                <div><i style="color: pink;" class="fas fa-circle"></i>&nbsp;Robotics</div>
+                <div><i style="color: brown;" class="fas fa-circle"></i>&nbsp;Machine Learning</div>
+                <div><i style="color: greenyellow;" class="fas fa-circle"></i>&nbsp;Object Recognition</div>
+                <div><i style="color: gold;" class="fas fa-circle"></i>&nbsp;Research</div>
+                <div><i style="color: cyan;" class="fas fa-circle"></i>&nbsp;GitHub</div>
+            </div>
+
+            <h2>Dunkin Donuts & Baskin Robbins | Shift Lead</h2>
+            <ul>
+                <li>Led training sessions for 3 new employees in POS systems, customer service standards, and health
+                    protocols.</li>
+                <li>Managed facility operations, including customer inquiries at the drive-through and in-store.</li>
+                <li>Directed customer flow and handling bulk pre-orders as well as ensuring in-store maintenance.</li>
+            </ul>
+            <div class="used">
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Leadership</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Teamwork</div>
+            </div>
+
+            <h2>Chuck E. Cheese | General Employee</h2>
+            <ul>
+                <li>Collaborated with coworkers to ensure efficient and effective operations in high-volume periods.
+                </li>
+                <li>Mastered point-of-service (POS) computer system for streamlined order taking and transaction
+                    processing.</li>
+            </ul>
+            <div class="used">
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Teamwork</div>
+            </div>
+
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-right"></i></div>
+        <h1>About Me</h1>
+        <section>
+            <p>
+                I am working as a research assistant in Human-Robot Interaction, focusing on computer vision and object
+                recognition. I am also studying at the University of Illinois Chicago, pursuing a Bachelor of Science in
+                Computer Science.
+            </p>
+            <p>
+                I am currently seeking a full-time position in the software development/engineering sector, with a keen
+                interest in front-end, back-end, or full-stack development roles. I am actively expanding my skill set
+                through online courses, focusing on refining existing skills and mastering new technologies. At present,
+                I am learning web development to broaden my proficiency.
+
+            </p>
+            <p> Outside of academics and professional pursuits, I enjoy volunteering, photography, and learning new
+                languages and skills. Last summer, I taught myself photography and video editing! I also have a passion
+                for video games and enjoy going on walks. </p>
+            </p>
+        </section>
+        <section>
+            <h2>Skills - Technical</h2>
+            <h3>Coding languages</h3>
+            <div class="used">
+                <div><i style="color: blueviolet;" class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i style="color: crimson;" class="fas fa-circle"></i>&nbsp;C++</div>
+                <div><i style="color: darkorange;" class="fas fa-circle"></i>&nbsp;Java</div>
+                <div><i style="color: forestgreen;" class="fas fa-circle"></i>&nbsp;HTML</div>
+                <div><i style="color: royalblue;" class="fas fa-circle"></i>&nbsp;CSS</div>
+                <div><i style="color: gold;" class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;SQL</div>
+                <div><i style="color: darkslateblue;" class="fas fa-circle"></i>&nbsp;C</div>
+                <div><i style="color: orchid;" class="fas fa-circle"></i>&nbsp;Dart</div>
+            </div>
+            <h3>Developer Tools</h3>
+            <div class="used">
+                <div><i style="color: mediumpurple;" class="fas fa-circle"></i>&nbsp;GitHub</div>
+                <div><i style="color: tomato;" class="fas fa-circle"></i>&nbsp;Git</div>
+                <div><i style="color: limegreen;" class="fas fa-circle"></i>&nbsp;VS Code</div>
+                <div><i style="color: dodgerblue;" class="fas fa-circle"></i>&nbsp;PyCharm</div>
+                <div><i style="color: coral;" class="fas fa-circle"></i>&nbsp;IntelliJ</div>
+                <div><i style="color: slateblue;" class="fas fa-circle"></i>&nbsp;Maven</div>
+
+            </div>
+            <h3>Libraries</h3>
+            <div class="used">
+                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;SQLite</div>
+                <div><i style="color: crimson;" class="fas fa-circle"></i>&nbsp;Pandas</div>
+                <div><i style="color: goldenrod;" class="fas fa-circle"></i>&nbsp;Seaborn</div>
+                <div><i style="color: royalblue;" class="fas fa-circle"></i>&nbsp;PyTorch</div>
+                <div><i style="color: darkorchid;" class="fas fa-circle"></i>&nbsp;OpenCV</div>
+                <div><i style="color: forestgreen;" class="fas fa-circle"></i>&nbsp;ONNX</div>
+
+            </div>
+            <h3>Frameworks</h3>
+            <div class="used">
+                <div><i style="color: darkslateblue;" class="fas fa-circle"></i>&nbsp;JavaFX</div>
+                <div><i style="color: tomato;" class="fas fa-circle"></i>&nbsp;GoogleTest</div>
+                <div><i style="color: limegreen;" class="fas fa-circle"></i>&nbsp;JUnit 5</div>
+                <div><i style="color: steelblue;" class="fas fa-circle"></i>&nbsp;Arduino</div>
+                <div><i style="color: mediumvioletred;" class="fas fa-circle"></i>&nbsp;Unity</div>
+                <div><i style="color: orange;" class="fas fa-circle"></i>&nbsp;Flutter</div>
+
+            </div>
+            <h2>Pastimes</h2>
+            <div class="used">
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Photography</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Video Editing</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Gaming</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Studying Language</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Volunteering</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Walking</div>
+                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Gym</div>
+            </div>
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>Contact</h1>
+        <section>
+            <h2>//Needs Work</h2>
+            <a class="mailtoui" href="mailto:daniyalkkr@protonmail.com">Daniyal Khokhar</a>
+        </section>
+    </div>
+    <div id="resume_container" class="container">
+        <div onclick="closeresume()"><i class="fas fa-angle-right"></i></div>
+        <object class="pdf" data="Resume 3.2.0.pdf" width="800" height="800">
+        </object>
+    </div>
+    <!-- <div id="footer">
+        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
