@@ -1,0 +1,67 @@
+
+.data_pair {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 2rem;
+    /* padding: 2rem 0; */
+    border-bottom: 1px solid #ccc;
+}
+
+.subtitle {
+    display: flex;
+    align-items: flex-start; 
+    /* Center the "Education" text vertically with the first block */
+    min-width: 150px; /* Ensure consistent width for the left column */
+}
+
+.subtitle h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: #444;
+}
+
+.content {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding: 0px 20px 0px 20px;
+}
+
+.info_block {
+    margin-bottom: 1.5rem;
+}
+
+.info_block h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #222;
+}
+
+.details {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.dates {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills li {
+    font-size: 0.85rem;
+    background: #f0f0f0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    color: #555;
+}
