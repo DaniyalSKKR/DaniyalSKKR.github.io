@@ -93,8 +93,8 @@
         </div>
 
 
-        <button class="btn_one">button 1</button>
-        <button class="btn_two">button 2</button>
+        <button class="btn_one" onclick="showabout(); closeeducation();">Previous</button>
+        <button class="btn_two" onclick="showwork(); closeeducation();">Next</button>
 
     </div>
     <div id="work_container" class="container">
@@ -146,8 +146,8 @@
                 <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Teamwork</div>
             </div>
 
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button>
+            <button class="btn_one" onclick="showeducation(); closework();">Previous</button>
+            <button class="btn_two" onclick="showresume(); closework();">Next</button>
         </section>
     </div>
     <div id="about_container" class="container">
@@ -225,6 +225,7 @@
                 <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Walking</div>
                 <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Gym</div>
             </div>
+            <button class="btn_one" onclick="showeducation(); closeabout();">Next</button>
         </section>
     </div>
     <!-- <div id="contact_container" class="container">
@@ -239,6 +240,7 @@
         <div onclick="closeresume()"><i class="fas fa-angle-right"></i></div>
         <object class="pdf" data="Resume 3.2.0.pdf" width="800" height="800">
         </object>
+        <button class="btn_one" onclick="showwork(); closeresume();">Previous</button>
     </div>
     <!-- <div id="footer">
         made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
