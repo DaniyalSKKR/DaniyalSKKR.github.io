@@ -1,7 +1,19 @@
+.codepath-image {
+    height: 5em;
+}
+.uic-image{
+    height: 5em;
+}
+.info_header {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    flex-direction: column;
+    gap: 45px; /* Add some space between the h3 and the image */
+}
 
 .data_pair {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     gap: 2rem;
     /* padding: 2rem 0; */
     border-bottom: 1px solid #ccc;
@@ -9,17 +21,19 @@
 
 .subtitle {
     display: flex;
-    align-items: flex-start; 
+    /* align-items: flex-start;  */
     /* Center the "Education" text vertically with the first block */
-    min-width: 150px; /* Ensure consistent width for the left column */
+    min-width: 150px;
 }
 
 .subtitle h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
     letter-spacing: 0.1em;
     margin: 0;
-    color: #444;
+    color: #ffffff;
 }
 
 .content {
@@ -33,20 +47,21 @@
 }
 
 .info_block h3 {
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     margin: 0;
-    color: #222;
+    color: white;
 }
 
 .details {
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
     font-size: 1rem;
-    color: #666;
+    color: #999999;
 }
 
 .dates {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     color: #888;
+    font-style: italic;
 }
 
 .skills {
