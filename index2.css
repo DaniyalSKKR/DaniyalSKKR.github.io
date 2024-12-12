@@ -4,6 +4,19 @@
 .uic-image{
     height: 5em;
 }
+#about_block{
+    display: flex;
+    align-items: center; /* Vertically align items */
+    flex-direction: row;
+    gap: 35px; /* Add some space between the h3 and the image */
+}
+
+.profile-img{
+    height: 20em;
+    border: 1rem solid rgba(255, 255, 255, 0.75);
+    border-radius: 15%;
+}
+/* images above */
 .info_header {
     display: flex;
     align-items: center; /* Vertically align items */
