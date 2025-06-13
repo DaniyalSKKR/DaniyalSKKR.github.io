@@ -2,294 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniyal Khokhar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index2.css">
 </head>
 
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
+    <!-- <div class="bg-image"></div> -->
     <div id="particles-js"></div>
-    <div id="box">
-        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
-        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
-    </div>
-    <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a> -->
-    <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a> -->
-    <div class="background-image"></div>
-    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <h1>Daniyal Khokhar</h1>
-        <h2>Software Developer / Teacher / Researcher</h2>
-        <div id="menu">
-            <a onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
-            <a onclick="showeducation()" class="animated fadeIn" style="animation-delay:2.2s;">Education</a>
-            <a onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Work</a>
-            <!-- <a onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a> -->
-            <!-- <a style="text-decoration: none;" class="mailtoui" href="mailto:daniyalkkr@protonmail.com"
-                class="animated fadeIn" style="animation-delay:2.2s;">Contact</a> -->
-            <a onclick="showresume()" class="animated fadeIn" style="animation-delay:2.2s;">Resume</a>
+
+
+    <!-- Hero / Intro -->
+    <section class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark text-white">
+        <h1 class="display-3">Daniyal Khokhar</h1>
+        <p class="lead">Software Developer / Teacher / Researcher</p>
+
+        <!-- Menu -->
+        <div class="d-flex gap-3 my-3">
+            <button class="btn btn-outline-light" id="openAboutBtn">About</button>
+            <button class="btn btn-outline-light" id="openEducationBtn">Education</button>
+            <button class="btn btn-outline-light" id="openWorkBtn">Work</button>
+            <button class="btn btn-outline-light" id="openResumeBtn">Resume</button>
         </div>
-        <table>
-            <tr>
-                <td class="animated zoomIn" style="animation-delay:2.2s;"><a
-                        href="https://www.linkedin.com/in/daniyal-s-khokhar/" target="_blank" class="social"><i
-                            class="fab fa-linkedin"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://github.com/DaniyalSKKR"
-                        target="_blank" class="social"><i class="fab fa-github"></i></a></td>
-                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social mailtoui animated fadeIn"
-                        style="text-decoration: none; animation-delay:2.2s;" href="mailto:daniyalkkr@protonmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a></td>
 
-            </tr>
-        </table>
-    </div>
+        <!-- About -->
+        <div id="aboutPanel" class="position-fixed top-0 panel-struct bg-dark"
+            style="transform: translateY(-100%); transition: transform 0.75s ease; z-index: 1050; overflow-y: auto;">
+            <div class="p-4">
+                <button class="btn btn-outline-secondary mb-3" id="closeAboutBtn">&times; Close</button>
 
-    <div id="edu_container" class="container">
-        <div onclick="closeeducation()"><i class="fas fa-angle-right"></i></div>
-        <div class="data_pair">
-            <span class="subtitle">
-                <div class="info_header">
-                    <h2>Education</h2>
-                    <img class="uic-image" src="UIC.png" alt="University of Illinois Chicago">
-                    <img class="codepath-image" src="CodePath.png" alt="Code Path">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <img src="profile-img.PNG" alt="Picture of Developer" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6" id="about_text">
+                        <p>
+                            I am currently interning as a software developer at iLabs and working as a Coding & Robotics
+                            Instructor with MARS Academy. I am also studying at
+                            the University of Illinois Chicago, pursuing a Bachelor of
+                            Science in Computer Science.
+                        </p>
+                        <p>
+                            I am currently seeking an internship in the software development/engineering sector for FALL
+                            2025, with an interest in Software Development, Embedded Systems, and Robotics. I am
+                            actively
+                            expanding my skill set through online courses, focusing on refining existing skills and
+                            mastering
+                            new technologies through competition. At present, I am developing a debris-cleaning space
+                            robot
+                            for a competition.
+                        </p>
+                        <p>
+                            Outside of academics and professional pursuits, I enjoy volunteering, photography, and
+                            learning new languages and skills. Last summer, I taught myself photography and video
+                            editing! I also
+                            have a passion for video games and enjoy going on walks.
+                        </p>
+                    </div>
                 </div>
-            </span>
-            <div class="content">
+                <!-- You can add more content here -->
 
-                <div class="info_block">
-
-                    <h3>Bachelor of Science in Computer Science</h3>
-
-                    <p class="details">University of Illinois Chicago</p>
-                    <p class="dates">Sep. 2020 - Dec. 2025</p>
-                </div>
-
-                <div class="info_block">
-                    <h3>Certificate in Advanced Programming</h3>
-
-                    <p class="details">CodePath</p>
-                    <p class="dates">Jun. 2024 - Dec. 2024</p>
-                    <!-- <div class="used">
-                        <div><i class="fas fa-circle"></i>&nbsp;Python</div>
-                        <div><i class="fas fa-circle"></i>&nbsp;YOLO</div>
-                    </div> -->
-                </div>
             </div>
         </div>
 
+        <!-- Education -->
+        <div id="educationPanel" class="position-fixed top-0 end-0 vh-100 bg-dark shadow-lg"
+            style="width: 80%; transform: translateY(-100%); transition: transform 0.75s ease; z-index: 1050; overflow-y: auto;">
+            <div class="p-4">
+                <button class="btn btn-outline-secondary mb-3" id="closeEducationBtn">&times; Close</button>
 
-        <button class="btn_one" onclick="showabout(); closeeducation();">Previous</button>
-        <button class="btn_two" onclick="showwork(); closeeducation();">Next</button>
-
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>Work Experience</h1>
-        <section>
-            <h2>Software Developer Intern | iLabs</h2>
-            <p class="dates">May. 2025 - Present</p>
-            <ul>
-                <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore qui libero, eaque ea rerum
-                    consectetur quasi fuga molestias quibusdam soluta voluptas quisquam incidunt est ratione ad!
-                    Molestias eum nam perspiciatis!
-                </li>
-            </ul>
-            <div class="used">
-                <div><i style="color: green;" class="fas fa-circle"></i>&nbsp;Django</div>
-                <div><i style="color: red;" class="fas fa-circle"></i>&nbsp;Python</div>
-                <div><i style="color: blue;" class="fas fa-circle"></i>&nbsp;HTML</div>
-                <div><i style="color: orange;" class="fas fa-circle"></i>&nbsp;CSS</div>
-                <div><i style="color: cyan;" class="fas fa-circle"></i>&nbsp;GitHub</div>
-            </div>
-
-            <h2>Coding & Robotics Instructor | MARS Academy</h2>
-            <p class="dates">Dec. 2024 - Present</p>
-            <ul>
-                <li> Taught programming and problem-solving to 24 students aged 6-12 using Python and microcontrollers.
-                </li>
-                <li>Designed and delivered a comprehensive coding curriculum, including custom slides catered to
-                    different level students, coding activities, and course materials.
-                </li>
-                <li>Introduced students to beginner, intermediate, and advanced skills such as libraries, version
-                    control, memory management, and data structures.
-                </li>
-            </ul>
-            <div class="used">
-                <div><i style="color: red;" class="fas fa-circle"></i>&nbsp;Python</div>
-                <div><i style="color: greenyellow;" class="fas fa-circle"></i>&nbsp;Data Structures</div>
-                <div><i style="color: gold;" class="fas fa-circle"></i>&nbsp;Microcontrollers</div>
-                <div><i style="color: green;" class="fas fa-circle"></i>&nbsp;Sensors</div>
-                <div><i style="color: cyan;" class="fas fa-circle"></i>&nbsp;GitHub</div>
-                <div><i style="color: grey;" class="fas fa-circle"></i>&nbsp;Teaching</div>
-                <div><i style="color: grey;" class="fas fa-circle"></i>&nbsp;Career Advice</div>
-            </div>
-
-            <h2>Undergraduate Assistant Researcher | University of Illinois Chicago</h2>
-            <p class="dates">Sep. 2024 - Dec. 2024</p>
-            <ul>
-                <li>Developed a learning services companion-robot using YOLO, Python, OpenCV, PyTorch, and APIs.</li>
-                <li>Conducted research on efficient, optimized object recognition models for a human-robot interaction
-                    system.</li>
-                <li>Led configuration and troubleshooting of SDKs, and cnn model conversion, testing, and optimization.
-                </li>
-            </ul>
-            <div class="used">
-                <div><i style="color: red;" class="fas fa-circle"></i>&nbsp;Python</div>
-                <div><i style="color: blue;" class="fas fa-circle"></i>&nbsp;YOLO</div>
-                <div><i style="color: green;" class="fas fa-circle"></i>&nbsp;OpenCV</div>
-                <div><i style="color: purple;" class="fas fa-circle"></i>&nbsp;PyTorch</div>
-                <div><i style="color: orange;" class="fas fa-circle"></i>&nbsp;ONNX</div>
-                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;API</div>
-                <div><i style="color: pink;" class="fas fa-circle"></i>&nbsp;Robotics</div>
-                <div><i style="color: brown;" class="fas fa-circle"></i>&nbsp;Machine Learning</div>
-                <div><i style="color: greenyellow;" class="fas fa-circle"></i>&nbsp;Object Recognition</div>
-                <div><i style="color: gold;" class="fas fa-circle"></i>&nbsp;Research</div>
-                <div><i style="color: cyan;" class="fas fa-circle"></i>&nbsp;GitHub</div>
-            </div>
-
-            <h2>Shift Lead | Dunkin Donuts & Baskin Robbins</h2>
-            <p class="dates">Jun. 2020 - Sep. 2021</p>
-            <ul>
-                <li>Led training sessions for 3 new employees in POS systems, customer service standards, and health
-                    protocols.</li>
-                <li>Managed facility operations, including customer inquiries at the drive-through and in-store.</li>
-                <li>Directed customer flow and handling bulk pre-orders as well as ensuring in-store maintenance.</li>
-            </ul>
-            <div class="used">
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Leadership</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Teamwork</div>
-            </div>
-
-            <button class="btn_one" onclick="showeducation(); closework();">Previous</button>
-            <button class="btn_two" onclick="showresume(); closework();">Next</button>
-        </section>
-    </div>
-    <div id="about_container" class="container">
-        <div onclick="closeabout()"><i class="fas fa-angle-right"></i></div>
-        <h1>About Me</h1>
-        <span id="about_block">
-            <section id="about_text">
+                <h1>Education</h1>
                 <p>
-                    I am currently interning as a software developer at iLabs and working as a Coding & Robotics
-                    Instructor with MARS Academy. I am also studying at
-                    the University of Illinois Chicago, pursuing a Bachelor of
-                    Science in Computer Science.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt quas deserunt ipsa
+                    pariatur cumque et aspernatur ad maiores aperiam? Vero, aut nam. Eum unde repellat error,
+                    veritatis
+                    nesciunt voluptatibus!
                 </p>
+                <!-- You can add more content here -->
+
+            </div>
+        </div>
+
+        <!-- Work -->
+        <div id="workPanel" class="position-fixed top-0 end-0 vh-100 bg-dark shadow-lg"
+            style="width: 80%; transform: translateY(-100%); transition: transform 0.75s ease; z-index: 1050; overflow-y: auto;">
+            <div class="p-4">
+                <button class="btn btn-outline-secondary mb-3" id="closeWorkBtn">&times; Close</button>
+
+                <h1>Education</h1>
                 <p>
-                    I am currently seeking an internship in the software development/engineering sector for FALL 2025,
-                    with an interest in Software Development, Embedded Systems, and Robotics. I am actively
-                    expanding my skill set through online courses, focusing on refining existing skills and mastering
-                    new technologies through competition. At present, I am developing a debris-cleaning space robot
-                    for a competition.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt quas deserunt ipsa
+                    pariatur cumque et aspernatur ad maiores aperiam? Vero, aut nam. Eum unde repellat error,
+                    veritatis
+                    nesciunt voluptatibus!
                 </p>
-                <p> Outside of academics and professional pursuits, I enjoy volunteering, photography, and learning new
-                    languages and skills. Last summer, I taught myself photography and video editing! I also have a
-                    passion for video games and enjoy going on walks. </p>
-            </section>
-            <img class="profile-img" src="profile-img.PNG" alt="Picture of Developer">
-        </span>
-
-        <section>
-            <h2>Skills - Technical</h2>
-            <h3>Coding languages</h3>
-            <div class="used">
-                <div><i style="color: blueviolet;" class="fas fa-circle"></i>&nbsp;Python</div>
-                <div><i style="color: crimson;" class="fas fa-circle"></i>&nbsp;C++</div>
-                <div><i style="color: darkorange;" class="fas fa-circle"></i>&nbsp;Java</div>
-                <div><i style="color: forestgreen;" class="fas fa-circle"></i>&nbsp;HTML</div>
-                <div><i style="color: royalblue;" class="fas fa-circle"></i>&nbsp;CSS</div>
-                <div><i style="color: gold;" class="fas fa-circle"></i>&nbsp;JavaScript</div>
-                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;SQL</div>
-                <div><i style="color: darkslateblue;" class="fas fa-circle"></i>&nbsp;C</div>
-                <div><i style="color: orchid;" class="fas fa-circle"></i>&nbsp;Dart</div>
-            </div>
-            <h3>Developer Tools & CAD</h3>
-            <div class="used">
-                <div><i style="color: mediumpurple;" class="fas fa-circle"></i>&nbsp;GitHub</div>
-                <div><i style="color: tomato;" class="fas fa-circle"></i>&nbsp;Git</div>
-                <div><i style="color: limegreen;" class="fas fa-circle"></i>&nbsp;VS Code</div>
-                <div><i style="color: dodgerblue;" class="fas fa-circle"></i>&nbsp;PyCharm</div>
-                <div><i style="color: coral;" class="fas fa-circle"></i>&nbsp;IntelliJ</div>
-                <div><i style="color: slateblue;" class="fas fa-circle"></i>&nbsp;Maven</div>
-                <div><i style="color: crimson;" class="fas fa-circle"></i>&nbsp;Siemens NX</div>
+                <!-- You can add more content here -->
 
             </div>
-            <h3>Libraries</h3>
-            <div class="used">
-                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;SQLite</div>
-                <div><i style="color: crimson;" class="fas fa-circle"></i>&nbsp;Pandas</div>
-                <div><i style="color: goldenrod;" class="fas fa-circle"></i>&nbsp;Seaborn</div>
-                <div><i style="color: royalblue;" class="fas fa-circle"></i>&nbsp;PyTorch</div>
-                <div><i style="color: darkorchid;" class="fas fa-circle"></i>&nbsp;OpenCV</div>
-                <div><i style="color: forestgreen;" class="fas fa-circle"></i>&nbsp;ONNX</div>
-                <div><i style="color: coral;" class="fas fa-circle"></i>&nbsp;Matplotlib</div>
+        </div>
+
+        <!-- Resume -->
+        <div id="resumePanel" class="position-fixed top-0 end-0 vh-100 bg-dark shadow-lg"
+            style="width: 80%; transform: translateY(-100%); transition: transform 0.75s ease; z-index: 1050; overflow-y: auto;">
+            <div class="p-4">
+                <button class="btn btn-outline-secondary mb-3" id="closeResumeBtn">&times; Close</button>
+
+                <h1>Education</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt quas deserunt ipsa
+                    pariatur cumque et aspernatur ad maiores aperiam? Vero, aut nam. Eum unde repellat error,
+                    veritatis
+                    nesciunt voluptatibus!
+                </p>
+                <!-- You can add more content here -->
 
             </div>
-            <h3>Frameworks</h3>
-            <div class="used">
-                <div><i style="color: darkslateblue;" class="fas fa-circle"></i>&nbsp;JavaFX</div>
-                <div><i style="color: tomato;" class="fas fa-circle"></i>&nbsp;GoogleTest</div>
-                <div><i style="color: limegreen;" class="fas fa-circle"></i>&nbsp;JUnit 5</div>
-                <div><i style="color: steelblue;" class="fas fa-circle"></i>&nbsp;Arduino</div>
-                <div><i style="color: mediumvioletred;" class="fas fa-circle"></i>&nbsp;Unity</div>
-                <div><i style="color: orange;" class="fas fa-circle"></i>&nbsp;Flutter</div>
-                <div><i style="color: teal;" class="fas fa-circle"></i>&nbsp;Django</div>
+        </div>
 
-            </div>
-            <h2>Pastimes</h2>
-            <div class="used">
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Photography</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Video Editing</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Gaming</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Studying Languages</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Volunteering</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Walking</div>
-                <div><i style="color: gray;" class="fas fa-circle"></i>&nbsp;Gym</div>
-            </div>
-            <button class="btn_one" onclick="showeducation(); closeabout();">Next</button>
-        </section>
-    </div>
-    <!-- <div id="contact_container" class="container">
-        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-        <h1>Contact</h1>
-        <section>
-            <h2>//Needs Work</h2>
-            <a class="mailtoui" href="mailto:daniyalkkr@protonmail.com">Daniyal Khokhar</a>
-        </section>
-    </div> -->
-    <div id="resume_container" class="container">
-        <div onclick="closeresume()"><i class="fas fa-angle-right"></i></div>
-        <object class="pdf" data="Daniyal Khokhar Resume 4.3.1.pdf" width="800" height="800">
-        </object>
-        <button class="btn_one" onclick="showwork(); closeresume();">Previous</button>
-    </div>
-    <!-- <div id="footer">
-        made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
-    </div> -->
-    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+
+        <!-- Social Links -->
+        <div class="d-flex gap-4 fs-3 mt-4">
+            <a href="https://www.linkedin.com/in/daniyal-s-khokhar/" class="text-white" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/DaniyalSKKR" class="text-white" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a href="mailto:x@protonmail.com" class="text-white"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <!-- JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+
 </body>
 
 </html>
