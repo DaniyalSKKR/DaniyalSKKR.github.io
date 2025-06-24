@@ -18,6 +18,21 @@
   right: 10%;
   height: 100vh;
 }
+.used div {
+  font-size: 14px !important;
+  display: inline-block;
+  padding: 8px 8px;
+  border: 2px solid #fff;
+  margin: 0px 0px 10px 2px;
+  /* t,r,b,l */
+  border-radius: 50px;
+}
+/* .used:hover {
+  cursor: text;
+}
+.used div:hover {
+  cursor: text;
+} */
 
 body {
   overflow-y: auto;
