@@ -2,264 +2,645 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniyal Khokhar</title>
+  <title>Portfolio Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta property="og:title" content="Page Tile" />
+  <meta property="og:description" content="Personal Site" />
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index2.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="icon" href="images/favicon.png" />
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-    <!-- <div class="bg-image"></div> -->
-    <div id="particles-js"></div>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
+    id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Daniyal Khokhar</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-
-    <!-- Hero / Intro -->
-    <section id="main-page"
-        class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark text-white">
-        <h1 class="display-3">Daniyal Khokhar</h1>
-        <p class="lead">Software Developer / Teacher / Researcher</p>
-
-        <!-- Menu -->
-        <div class="d-flex gap-3 my-3">
-            <button class="btn btn-outline-light" id="openAboutBtn">About</button>
-            <button class="btn btn-outline-light" id="openEducationBtn">Education</button>
-            <button class="btn btn-outline-light" id="openWorkBtn">Work</button>
-            <a href="Daniyal Khokhar Resume 4.3.1.pdf" target="_blank"><button class="btn btn-outline-light"
-                    id="openResumeBtn">Resume</button></a>
-        </div>
-
-        <!-- Social Links -->
-        <div class="d-flex gap-4 fs-3 mt-4">
-            <a href="https://www.linkedin.com/in/daniyal-s-khokhar/" class="text-white" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/DaniyalSKKR" class="text-white" target="_blank"><i
-                    class="fab fa-github"></i></a>
-            <a href="mailto:daniyalskkr@gmail.com" class="text-white"><i class="fas fa-envelope"></i></a>
-        </div>
-    </section>
-    <!-- <span class="placeholder col-12 placeholder-lg"></span> -->
-
-    <!-- About -->
-    <div id="aboutPanel"
-        class="vh-100 p-4 d-flex flex-column justify-content-center align-items-center bg-light text-dark">
-
-        <div class="container row align-items-center rounded glass p-5">
-            <div class="col-md-4 text-center">
-                <img src="profile-img.PNG" alt="Picture of Developer" class="img-fluid rounded profile-img">
-            </div>
-            <div class="col-md-6 mt-3" id="about_text">
-                <h2>About Me</h2>
-                <hr>
-                <p>
-                    I am currently interning as a Software Developer at iLabs, while also serving as a Coding & Robotics
-                    Instructor with MARS Academy and a Summer Teaching Assistant for Northwestern University's Center
-                    for Talent Development. I'm pursuing a Bachelor of Science in Computer Science at Purdue
-                    University.
-                </p>
-                <p>
-                    I am actively seeking an entry-level role or internship for Fall 2025 in the software development or
-                    engineering sector, with particular interest in software development, embedded systems, and
-                    robotics.
-                </p>
-                <p>
-                    Outside of academics and professional pursuits, I enjoy volunteering, photography, and
-                    learning new languages and skills. I also have a passion for video games and enjoy going on walks.
-                </p>
-
-            </div>
-            <!-- You can add more content here -->
-
-        </div>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume-section" class="nav-link"><span>Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project-section" class="nav-link"><span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Education -->
-    <div id="educationPanel"
-        class="container-fluid vh-100 d-flex justify-content-center align-items-center bg-dark text-dark">
-        <div class="row container rounded glass p-5">
-            <h2>Education</h2>
-            <hr>
-            <!-- UIC Box -->
-            <div class="row align-items-center rounded-top glass p-5 ">
+  <!-- particles -->
+  <div id="particles-js"></div>
 
+  <section class="hero-wrap js-fullheight">
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+        <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          <div class="text text-center">
+            <span class="subheading">SOFTWARE DEVELOPER INTERN</span>
+            <h1>Daniyal Khokhar</h1>
+            <ul class="ftco-footer-social list-unstyled float-md-center float-md-center mt-4">
+              <li class="ftco-animate">
+                <a href="https://github.com/DaniyalSKKR" target="_blank"><span class="icon-github"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/daniyal-s-khokhar/" target="_blank"><span
+                    class="icon-linkedin-square"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a><span class="icon-envelope"></span></a>
+              </li>
+              <!-- <li class="ftco-animate">
+                <a><span class="icon-instagram"></span></a>
+              </li> -->
+            </ul>
+            <!-- <h2>
+              I like
+              <span class="txt-rotate" data-period="2000"
+                data-rotate='[ "Coding.", "Software Development", "Teaching.", "Research.", "Innovation."]'></span>
+            </h2> -->
 
-                <div class="col-md-4 text-center">
-                    <img class="image-size" src="UIC.png" alt="University of Illinois Chicago">
-                </div>
-                <div class="col-md-7 mt-3" id="university_text">
-                    <div class="content">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <h4>University of Illinois Chicago</h4>
-                        <p class="dates">Sep. 2020 - Dec. 2025</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- CodePath Box -->
-            <div class="row align-items-center rounded-bottom glass p-2">
-
-                <div class="col-md-4 text-center me-0">
-                    <img style="height: 8em;" src="CodePath-Logo.png" alt="Code Path">
-                </div>
-                <div class="col-md-7 mt-3">
-                    <div class="content">
-                        <h3>Certificate in Technical Preparation & Web Development</h3>
-                        <h4>CodePath</h4>
-                        <p class="dates">Jun. 2024 - Dec. 2025</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="scrollDown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    <div class="glyphicon glyphicon-arrow-down"></div>
+  </section>
 
-    <!-- Work -->
-    <div id="workPanel" class="container-fluid d-flex justify-content-center align-items-center bg-dark text-dark py-5">
-        <div class="container glass rounded p-5">
-            <h2 class="mb-4">Work Experience</h2>
-            <hr class="mb-5" />
-
-            <!-- Insight Labs -->
-            <div class="card mb-4 shadow-sm glass">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 text-center p-3">
-                        <img class="image-size" src="iLabs-Logo.png" alt="Insight Labs" />
-                    </div>
-                    <div class="col-md-8 p-4">
-                        <h3>Software Developer Intern</h3>
-                        <h4>Insight Labs</h4>
-                        <p class="dates">May 2025 – Present</p>
-                        <ul>
-                            <li>Taught programming and problem-solving to 24 students aged 6–12 using Python and
-                                microcontrollers.</li>
-                            <li>Designed and delivered a coding curriculum with custom slides and activities tailored to
-                                each level.</li>
-                            <li>Introduced students to libraries, version control, memory management, and data
-                                structures.</li>
-                        </ul>
-                        <div class="d-flex flex-wrap gap-3 mt-3">
-                            <span><i class="fas fa-circle" style="color: red;"></i> Python</span>
-                            <span><i class="fas fa-circle" style="color: olivedrab;"></i> Django</span>
-                            <span><i class="fas fa-circle" style="color: lightblue;"></i> GitHub</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Northwestern CTD -->
-            <div class="card mb-4 shadow-sm glass">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 text-center p-3">
-                        <img class="image-size" src="Northwestern-CTD-Logo.jpg" alt="Northwestern CTD" />
-                    </div>
-                    <div class="col-md-8 p-4">
-                        <h3>CTD Teaching Assistant</h3>
-                        <h4>Northwestern University Center for Talent Development</h4>
-                        <p class="dates">June 2025 – Present</p>
-                        <ul>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ut facilis
-                                architecto dicta.</li>
-                        </ul>
-                        <div class="d-flex flex-wrap gap-3 mt-3">
-                            <span><i class="fas fa-circle" style="color: orangered;"></i> Electronics</span>
-                            <span><i class="fas fa-circle" style="color: grey;"></i> Teaching</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MARS Academy -->
-            <div class="card mb-4 shadow-sm glass">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 text-center p-3">
-                        <img class="image-size" src="MARS-Logo.png" alt="MARS Academy" />
-                    </div>
-                    <div class="col-md-8 p-4">
-                        <h3>Coding & Robotics Instructor</h3>
-                        <h4>MARS Academy</h4>
-                        <p class="dates">Dec. 2024 – Present</p>
-                        <ul>
-                            <li>Taught programming and problem-solving to 24 students aged 6–12 using Python and
-                                microcontrollers.</li>
-                            <li>Developed a comprehensive curriculum with custom slides, activities, and course
-                                materials.</li>
-                            <li>Introduced beginner to advanced topics like libraries, version control, and data
-                                structures.</li>
-                        </ul>
-                        <div class="d-flex flex-wrap gap-3 mt-3">
-                            <span><i class="fas fa-circle" style="color: red;"></i> Python</span>
-                            <span><i class="fas fa-circle" style="color: greenyellow;"></i> Data Structures</span>
-                            <span><i class="fas fa-circle" style="color: gold;"></i> Microcontrollers</span>
-                            <span><i class="fas fa-circle" style="color: green;"></i> Sensors</span>
-                            <span><i class="fas fa-circle" style="color: cyan;"></i> GitHub</span>
-                            <span><i class="fas fa-circle" style="color: grey;"></i> Teaching</span>
-                            <span><i class="fas fa-circle" style="color: grey;"></i> Career Advice</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- UIC Research -->
-            <div class="card mb-4 shadow-sm glass">
-                <div class="row g-0 align-items-center">
-                    <div class="col-md-4 text-center p-3">
-                        <img class="image-size border" src="UIC.png" alt="University of Illinois Chicago" />
-                    </div>
-                    <div class="col-md-8 p-4">
-                        <h3>Undergraduate Assistant Researcher</h3>
-                        <h4>University of Illinois Chicago LIT Lab</h4>
-                        <p class="dates">Sep. 2024 – Dec. 2024</p>
-                        <ul>
-                            <li>Built a learning services companion robot using YOLO, Python, OpenCV, and PyTorch.</li>
-                            <li>Researched efficient object recognition models for human-robot interaction systems.</li>
-                            <li>Led SDK configuration, CNN model testing, conversion, and optimization processes.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+  <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row d-flex no-gutters">
+        <div class="col-md-6 col-lg-6 d-flex">
+          <div class="img-about img d-flex align-items-stretch">
+            <div class="overlay"></div>
+            <div class="img d-flex align-self-stretch align-items-center"
+              style="background-image: url(images/about.jpeg)"></div>
+          </div>
         </div>
-    </div>
+        <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <h2 class="mb-4">About Me</h2>
+              <p>Here's a little about me</p>
+              <ul class="about-info mt-4 px-md-0 px-2">
+                <li class="d-flex"><span>Name:</span><span>Daniyal Khokhar</span></li>
+                <li class="d-flex">
+                  <span>Email:</span><span>daniyalskkr@gmail.com</span>
+                </li>
 
-
-    <div id="aboutPanel"
-        class="vh-50 p-4 d-flex flex-column justify-content-center align-items-center bg-dark text-light">
-        <p>Website built by Daniyal Khokhar</p>
-    </div>
-    <!-- Resume -->
-    <!-- <div id="resumePanel"
-        class="vh-100 p-4 d-flex flex-column justify-content-center align-items-center bg-dark text-dark">
-        <div class="container row align-items-center rounded glass p-5">
-            <h3>Resume</h3>
-            <div class="p-4">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt quas deserunt ipsa
-                    pariatur cumque et aspernatur ad maiores aperiam? Vero, aut nam. Eum unde repellat error,
-                    veritatis
-                    nesciunt voluptatibus!
-                </p>
-
-                <a href="Daniyal Khokhar Resume 4.3.1.pdf" target="_blank">test</a>
+                <!-- <li class="d-flex">
+                  <span>Phone:</span><span>+1 XXX XXX XXXX</span>
+                </li> -->
+                <li class="d-flex">
+                  <span>Country:</span> <span>United States</span>
+                </li>
+                <li class="d-flex"><span>City:</span><span>Chicago, Illinois</span></li>
+              </ul>
             </div>
+          </div>
+          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+            <div class="text">
+              <p>
+                <a href="Daniyal Khokhar Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">Download CV</a>
+              </p>
+            </div>
+          </div>
         </div>
-    </div> -->
+      </div>
+    </div>
+  </section>
 
+  <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <nav id="navi">
+            <ul>
+              <li><a href="#page-1">Education</a></li>
+              <li><a href="#page-2">Experience</a></li>
+              <li><a href="#page-3">Skills</a></li>
+              <li><a href="#page-4">Awards</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div id="page-1" class="page one">
+            <h2 class="heading">Education</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-graduation-cap"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>University of Illinois Chicago</h2>
+                <span class="position">Bachelor of Science</span>
+                <p><strong>Computer Science</strong></p>
+                <p>Chicago - Illinois</p>
+                <span class="date">2020 - Present (Exp. August 2025)</span>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-book"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>CodePath</h2>
+                <span class="position">Certificate Program</span>
+                <p><strong>Computer Science</strong></p>
+                <p>Remote</p>
+                <span class="date">2024-2024</span>
+              </div>
+            </div>
+          </div>
 
-    <!-- JS dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+          <div id="page-2" class="page two">
+            <h2 class="heading">Experience</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-suitcase"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>Software Developer Intern</h2>
+                <span class="position">Insight Labs</span>
+                <p class="date">May 2025 - Present</p>
+                <ul>
+                  <li>
+                    Contributed to a full-stack UI using Django to showcase AI imaging models for a biotech application
+                  </li>
+                  <li>
+                    Built dynamic model pages leveraging Django for users to submit training data for custom AI models
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-suitcase"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>CTD Teaching Assistant</h2>
+                <span class="position">Northwestern Center for Talent Development</span>
+                <p class="date">Jun 2025 - Present</p>
+                <ul>
+                  <li>
+                    Assisted in teaching a hands-on Electronics course to advanced students as part of a STEM
+                    enrichment program.
+                  </li>
+                  <li>
+                    Guided students through hands-on circuit design, identification of electronic components, and the
+                    fundamentals of computer hardware. </li>
+                  <li>
+                    Led class as substitute instructor</li>
+                </ul>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-suitcase"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>Python & AI Instructor</h2>
+                <span class="position">MARS Academy</span>
+                <p class="date">Sept 2018 - Oct 2018</p>
+                <ul>
+                  <li>
+                    Instructed course for Python programming and Artificial Intelligence to 6 students in small-group
+                    setting
+                  </li>
+                  <li>
+                    Designed and delivered a comprehensive curriculum, slides, and activities for academically advanced
+                    students
+                  </li>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+                </ul>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-suitcase"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>Undergraduate Reseach Assistant</h2>
+                <span class="position">University of Illinois Chicago LIT Lab</span>
+                <p class="date">Sept 2018 - Oct 2018</p>
+                <ul>
+                  <li>
+                    Developed a learning services companion-robot using YOLO, Python, OpenCV, PyTorch, and APIs
+                  </li>
+                  <li>
+                    Led configuration and troubleshooting of SDKs, CNN model conversion, and quantization
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="page-3" class="page three">
+            <h2 class="heading">Skills</h2>
+            <!-- Skill Section -->
+            <div class="row mb-4 ftco-animate">
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/javascript.png" title="JavaScript" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/node.png" title="NodeJS" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/react.png" title="React" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/html.png" title="HTML" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/css.png" title="CSS" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/bootstrap.png" title="Bootstrap" />
+              </div>
+            </div>
+            <div class="row mb-4 ftco-animate">
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/cplusplus.png" title="C++" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/c.png" title="C" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/csharp.png" title="C#" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/photoshop.png" title="Photoshop" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/lightroom.png" title="Lightroom" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/illustrator.png" title="Illustrator" />
+              </div>
+            </div>
+            <div class="row mb-4 ftco-animate">
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/mongo.png" title="Mongo DB" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/firebase.png" title="FireBase" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/linux.png" title="Linux" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/dart.png" title="Dart" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/flutter.png" title="Flutter" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow" src="images/skills/java.png" title="Java" />
+              </div>
+            </div>
+          </div>
+          <div id="page-4" class="page four">
+            <h2 class="heading">Awards</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-medal"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>Runner Up - Speed Debugging Competition</h2>
+                <span class="position"><strong>ITEC</strong></span>
+                <span><strong> - NED Universit of Engg. & Tech</strong></span>
+                <p class="date">June 2018</p>
+                <p>Karachi - Pakistan</p>
+              </div>
+            </div>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="flaticon-trophy"></span>
+              </div>
+              <div class="text pl-3">
+                <h2>Winner - Speed Debugging Competition</h2>
+                <span class="position"><strong>Developer's Day</strong></span>
+                <span><strong> - FAST NUCES</strong></span>
+                <p class="date">Apr 2018</p>
+                <p>Karachi - Pakistan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="ftco-section" id="project-section">
+    <div class="container-fluid px-md-5">
+      <div class="row justify-content-center py-5 mt-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a class="services-1 shadow">
+            <span class="icon">
+              <i class="flaticon-camp"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">YelpCamp</h3>
+              <p><strong>NodeJS • Express • MongoDB</strong></p>
+              <p>
+                A web based application that allows user to view Campgrounds
+                and add their own. <br />
+                Used Node JS along with Express to make the application.
+                MongoDB for the database.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+          <a href="https://github.com/ahsankhan26/Book-Blog" target="_blank" class="services-1 shadow">
+            <span class="icon">
+              <i class="icon-book"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">My Read Book Shelf</h3>
+              <p><strong>Vanilla JS • Bootstrap</strong></p>
+              <p>
+                Fetches All Read Books from Goodreads using their API.
+                Extracts required data and displays in a blog type page.<br />All
+                without using a Database
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+          <a href="https://github.com/ahsankhan26/TermFolio" target="_blank" class="services-1 shadow">
+            <span class="icon">
+              <i class="icon-terminal"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">TermFolio</h3>
+              <p><strong>HTML • CSS • JavaScript</strong></p>
+              <p>
+                A Portfolio Website that is made to look and act like a
+                Terminal.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+          <a href="https://github.com/ahsankhan26/Whatsapp-Chat-Parser" target="_blank" class="services-1 shadow">
+            <span class="icon">
+              <i class="icon-whatsapp"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">WhatsApp Chat Parser</h3>
+              <p><strong>Python • Regex</strong></p>
+              <p>
+                An App that takes WhatsApp chat file and parses it for better
+                data analysis.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://github.com/ahsankhan26/Laser-Data-Transmission" target="_blank" class="services-1 shadow">
+            <span class="icon">
+              <i class="flaticon-circuit-board"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">Data Transmission with Laser</h3>
+              <p><strong>Arduino</strong></p>
+              <p>
+                A hardware based demonstration of Binary ASCII representation
+                of Text, Sent and Received from one system to another using
+                Laser and Arduino.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="https://github.com/ahsankhan26/Bomberman-Replica" target="_blank" class="services-1 shadow">
+            <span class="icon">
+              <i class="flaticon-bomberman"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-4">SNES Bomberman Replica Game</h3>
+              <p><strong>C# • Unity</strong></p>
+              <p>
+                Video game using Unity 2D game development environment and C#
+                Scripts for interactivity.<br />The game was intended to be
+                multiplayer competing against each other.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-4 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Contact Me</h2>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a>+92 XXX XXXXXXX</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="">test@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box text-center p-4 shadow">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+            </div>
+            <div>
+              <h3 class="mb-4">Website</h3>
+              <p><a>ahsankhan.me</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters block-9">
+        <div class="col-md-6 order-md-last d-flex">
+          <form method="POST" action="" class="bg-light p-4 p-md-5 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message"
+                required></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
+              <input type="hidden" name="_next" value="//ahsankhan.me" />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6 d-flex">
+          <div class="img" style="background-image: url(images/about.jpeg)"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About</h2>
+            <p>I like working with new tools and technologies</p>
+            <p class="mt-4"><u>Social Links</u></p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate">
+                <a href="https://github.com/ahsankhan26" target="_blank"><span class="icon-github"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/ahsankhan26/" target="_blank"><span
+                    class="icon-linkedin-square"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a><span class="icon-stack-overflow"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a><span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a>
+              </li>
+              <li>
+                <a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a>
+              </li>
+              <li>
+                <a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a>
+              </li>
+              <li>
+                <a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
+              </li>
+              <li>
+                <a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Question?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li>
+                  <a><span class="icon icon-phone"></span><span class="text">+92 XXX XXXXXXX</span></a>
+                </li>
+                <li>
+                  <a href=""><span class="icon icon-envelope"></span><span class="text">test@gmail.com</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <i class="icon-heart color-danger" aria-hidden="true"></i>
+          <i class="icon-heart color-danger" aria-hidden="true"></i>
+          <p class="mt-5">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
