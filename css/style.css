@@ -5,6 +5,14 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.brighter {
+  transition: filter 0.5s ease; /* Transition for the filter property */
+}
+
+.brighter:hover {
+  filter: brightness(145%); /* Apply brightness on hover */
+}
+
 .custom-icon {
   width: 50px;
   height: 50px;

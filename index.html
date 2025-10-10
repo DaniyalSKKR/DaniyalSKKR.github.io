@@ -10,6 +10,8 @@
   <meta property="og:description" content="Personal Site" />
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="icon" href="images/website_icon.png" />
 
@@ -138,7 +140,8 @@
           <div class="counter-wrap ftco-animate d-flex mt-md-3">
             <div class="text">
               <p>
-                <a href="Daniyal Khokhar Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">Download CV</a>
+                <a href="Daniyal Khokhar Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">Download
+                  Resume</a>
               </p>
             </div>
           </div>
@@ -153,10 +156,11 @@
         <div class="col-md-3">
           <nav id="navi">
             <ul>
-              <li><a href="#page-1">Education</a></li>
-              <li><a href="#page-2">Experience</a></li>
-              <li><a href="#page-3">Skills</a></li>
-              <li><a href="#page-4">Additional</a></li>
+              <li class="brighter"><a href="#page-1">Education</a></li>
+              <li class="brighter"><a href="#page-2">Experience</a></li>
+              <li class="brighter"><a href="#page-3">Skills</a></li>
+              <li class="brighter"><a href="#page-4">Additional</a></li>
+              <li class="brighter"><a href="#page-5">Certificates</a></li>
             </ul>
           </nav>
         </div>
@@ -353,9 +357,8 @@
                 <img class="img-fluid grow" src="images/skills/arduino.png" title="Arduino" />
               </div>
             </div>
+
             <div class="row mb-4 ftco-animate">
-
-
               <div class="col">
                 <img class="img-fluid grow" src="images/skills/vscode.png" title="Visual Studio Code" />
               </div>
@@ -365,14 +368,14 @@
               <div class="col">
                 <img class="img-fluid grow" src="images/skills/anaconda.png" title="Anaconda" />
               </div>
-              <!-- <div class="col">
+              <div class="col" style="visibility: hidden;">
                 <img class="img-fluid grow" src="images/skills/pyTorch.png" title="PyTorch" />
               </div>
-              <div class="col">
+              <div class="col" style="visibility: hidden;">
                 <img class="img-fluid grow" src="images/skills/openCV.png" title="OpenCV" />
-              </div> -->
-
+              </div>
             </div>
+
           </div>
           <div id="page-4" class="page four">
             <h2 class="heading">Additional</h2>
@@ -429,6 +432,141 @@
                 <p>Karachi - Pakistan</p>
               </div>
             </div> -->
+          </div>
+
+
+          <div id="page-5" class="page five">
+            <h2 class="heading">Certificates</h2>
+
+            <!-- 🔍 Modal for enlarging images -->
+            <div id="imgModal" class="img-modal mb-4" onclick="closeModal(event)">
+              <img class="modal-content" id="modalImage">
+              <div id="caption"></div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Agile Foundations_page-0001.jpg"
+                  alt="Certificate of Completion - Agile Foundations" title="Agile Foundations" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn_page-0001.jpg"
+                  alt="Certificate of Completion - Career Essentials in Software Development by Microsoft and LinkedIn"
+                  title="Career Essentials in Software Development by Microsoft and LinkedIn" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Computer Science Principles Programming_page-0001.jpg"
+                  alt="Certificate of Completion - Computer Science Principles Programming"
+                  title="Computer Science Principles Programming" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Crafting Meaningful HTML_page-0001.jpg"
+                  alt="Certificate of Completion - Crafting Meaningful HTML" title="Crafting Meaningful HTML" />
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Deep Learning and Computer Vision Object Detection with PyTorch_page-0001.jpg"
+                  alt="Certificate of Completion - Deep Learning and Computer Vision Object Detection with PyTorch"
+                  title="Deep Learning and Computer Vision Object Detection with PyTorch" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Electronics Foundations Fundamentals_page-0001.jpg"
+                  alt="Certificate of Completion - Electronics Foundations Fundamentals"
+                  title="Electronics Foundations Fundamentals" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_HTML Essential Training_page-0001.jpg"
+                  alt="Certificate of Completion - HTML Essential Training" title="HTML Essential Training" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow"
+                  src="images/linkedin/CertificateOfCompletion_Introduction to Career Skills in Software Development_page-0001.jpg"
+                  alt="Certificate of Completion - Introduction to Career Skills in Software Development"
+                  title="Introduction to Career Skills in Software Development" />
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Introduction to PLC and Industrial Automation_page-0001.jpg"
+                  alt="Certificate of Completion - Introduction to PLC and Industrial Automation"
+                  title="Introduction to PLC and Industrial Automation" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Programming Foundations Beyond the Fundamentals_page-0001.jpg"
+                  alt="Certificate of Completion - Programming Foundations: Beyond the Fundamentals"
+                  title="Programming Foundations: Beyond the Fundamentals" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Programming Foundations Fundamentals_page-0001.jpg"
+                  alt="Certificate of Completion - Programming Foundations: Fundamentals"
+                  title="Programming Foundations: Fundamentals" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_PLC Industrial Sensors_page-0001.jpg"
+                  alt="Certificate of Completion - PLC Industrial Sensors" title="PLC Industrial Sensors" />
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Scrum The Basics_page-0001.jpg"
+                  alt="Certificate of Completion - Scrum: The Basics" title="Scrum: The Basics" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Unix Essential Training_page-0001.jpg"
+                  alt="Certificate of Completion - Unix Essential Training" title="Unix Essential Training" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_PyTorch Essential Training Deep Learning_page-0001.jpg"
+                  alt="Certificate of Completion - PyTorch Essential Training: Deep Learning"
+                  title="PyTorch Essential Training: Deep Learning" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Learning Git and GitHub_page-0001.jpg"
+                  alt="Certificate of Completion - Learning Git and GitHub" title="Learning Git and GitHub" />
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/linkedin/CertificateOfCompletion_Learning the Python 3 Standard Library_page-0001.jpg"
+                  alt="Certificate of Completion - Learning the Python 3 Standard Library"
+                  title="Learning the Python 3 Standard Library" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img"
+                  src="images/certificates/TIP102 Technical Interview Certificate_page-0001.jpg"
+                  alt="TIP102 Technical Interview Certificate" title="TIP102 Technical Interview Certificate" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img" src="images/certificates/WEB101 Certificate_page-0001.jpg"
+                  alt="WEB101 Web Development Certificate" title="WEB101 Web Development Certificate" />
+              </div>
+              <div class="col">
+                <img class="img-fluid grow cert-img" src="images/certificates/python_basic certificate_page-0001.jpg"
+                  alt="Python Basic Certificate" title="Python Basic Certificate" />
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -703,6 +841,24 @@
         stroke="#F96D00" />
     </svg>
   </div>
+
+  <script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImage");
+    const captionText = document.getElementById("caption");
+
+    document.querySelectorAll(".cert-img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        // captionText.innerText = img.title;
+      });
+    });
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
