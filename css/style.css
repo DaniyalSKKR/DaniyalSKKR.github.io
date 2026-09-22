@@ -9742,6 +9742,522 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+/* =========================
+   Skills
+   ========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.skill-group {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.skill-group:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.skill-group-title {
+  margin: 0 0 11px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+
+/* Languages — Blue */
+.skill-pill.language {
+  color: #bfdbfe;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+
+/* Frameworks — Purple */
+.skill-pill.framework {
+  color: #ddd6fe;
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+
+/* Libraries — Green */
+.skill-pill.library {
+  color: #bbf7d0;
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+
+/* Developer Tools — Orange */
+.skill-pill.tools {
+  color: #fed7aa;
+  background: rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+
+/* AI Tools — Pink */
+.skill-pill.ai {
+  color: #fbcfe8;
+  background: rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+
+/* CAD — Cyan */
+.skill-pill.cad {
+  color: #a5f3fc;
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+
+/* Platforms — Yellow */
+.skill-pill.platform {
+  color: #fef08a;
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
+/* =========================================
+   Projects Carousel
+   ========================================= */
+
+.project-carousel {
+  position: relative;
+  padding: 20px 60px 65px;
+}
+
+
+/* Project Slide */
+
+.project-slide {
+  display: flex;
+  align-items: stretch;
+  min-height: 430px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Image */
+
+.project-image {
+  width: 55%;
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #111827;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.project-slide:hover .project-image img {
+  transform: scale(1.03);
+}
+
+
+/* Project Information */
+
+.project-info {
+  width: 45%;
+  padding: 45px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Project Number */
+
+.project-number {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #888;
+}
+
+
+/* Project Title */
+
+.project-info h3 {
+  margin-bottom: 18px;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+/* Technology Tags */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-bottom: 20px;
+}
+
+.project-tags span {
+  padding: 6px 11px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #c4b5fd;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+
+/* Description */
+
+.project-info p {
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  color: #aaa;
+}
+
+
+/* GitHub / Project Button */
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  align-self: flex-start;
+
+  padding: 10px 18px;
+
+  border-radius: 50px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: all 0.25s ease;
+}
+
+.project-button span {
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.project-button:hover {
+  color: #fff !important;
+  background: rgba(139, 92, 246, 0.25);
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.project-button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* Project Status */
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  align-self: flex-start;
+
+  margin-top: 5px;
+
+  padding: 7px 12px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #aaa;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+
+/* Carousel Arrows */
+
+.project-arrow {
+  width: 45px;
+  height: 45px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0;
+
+  opacity: 1;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  transition: all 0.25s ease;
+}
+
+.project-arrow:hover {
+  background: rgba(139, 92, 246, 0.25);
+}
+
+.project-arrow-icon {
+  font-size: 22px;
+  color: #fff;
+}
+
+
+/* Carousel Indicators */
+
+.project-indicators {
+  bottom: 10px;
+
+  margin: 0;
+
+  gap: 6px;
+}
+
+.project-indicators li {
+  width: 7px;
+  height: 7px;
+
+  margin: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  opacity: 1;
+
+  transition: all 0.25s ease;
+}
+
+.project-indicators li.active {
+  width: 24px;
+
+  border-radius: 10px;
+
+  background: #8b5cf6;
+}
+
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 991px) {
+
+  .project-carousel {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .project-slide {
+    min-height: 400px;
+  }
+
+  .project-image {
+    width: 50%;
+    min-height: 400px;
+  }
+
+  .project-info {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .project-info h3 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .project-carousel {
+    padding: 10px 15px 60px;
+  }
+
+  .project-slide {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 240px;
+    min-height: 240px;
+  }
+
+  .project-info {
+    width: 100%;
+    padding: 28px 25px 30px;
+  }
+
+  .project-info h3 {
+    font-size: 24px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .project-arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  .project-arrow-icon {
+    font-size: 18px;
+  }
+
+}
+
+/* ===== FIXES: blur/zoom + blue theme ===== */
+
+/* Fix blurry/zoomed images */
+.project-image img {
+  object-position: center top;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.project-slide:hover .project-image img {
+  transform: scale(1.015) translateZ(0);
+}
+
+/* Swap purple accents to #007bff */
+.project-tags span {
+  color: #cfe6ff;
+  background: rgba(0, 123, 255, 0.12);
+  border: 1px solid rgba(0, 123, 255, 0.25);
+}
+
+.project-button:hover {
+  background: rgba(0, 123, 255, 0.25);
+  border-color: rgba(0, 123, 255, 0.4);
+}
+
+.project-arrow:hover {
+  background: rgba(0, 123, 255, 0.25);
+}
+
+.project-indicators li.active {
+  background: #007bff;
+}
+
+/* Fix zoom on Summit and A.R.R.M images */
+img[alt="A.R.R.M space robot"] {
+  object-fit: cover;
+  object-position: 50% 30%;  /* fine-tune: horizontal% vertical% */
+}
+
+img[alt="Summit project"]{
+  object-fit: cover;
+  object-position: 0% 50%;  /* fine-tune: horizontal% vertical% */
+}
+
+/* Faster, smoother carousel transition */
+.carousel-item {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.carousel-fade .carousel-item {
+  transition: opacity 0.4s ease !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
