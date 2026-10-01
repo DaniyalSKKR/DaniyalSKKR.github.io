@@ -9850,6 +9850,28 @@ textarea.form-control {
   border-color: rgba(234, 179, 8, 0.3);
 }
 
+/* Hardware — Blue */
+.skill-pill.hardware {
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Mechanical — Orange */
+.skill-pill.mechanical {
+  color: #fdba74;
+  background: rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+/* Other — Gray */
+.skill-pill.other {
+  color: #d1d5db;
+  background: rgba(156, 163, 175, 0.15);
+  border-color: rgba(156, 163, 175, 0.3);
+}
+
+
 /* =========================================
    Projects Carousel
    ========================================= */
